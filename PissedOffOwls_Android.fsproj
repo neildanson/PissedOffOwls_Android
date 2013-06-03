@@ -44,6 +44,7 @@
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <ConsolePause>false</ConsolePause>
     <Tailcalls>true</Tailcalls>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -58,9 +59,6 @@
     </Reference>
     <Reference Include="FSharp.Core">
       <HintPath>..\..\..\..\Developer\MonoTouch\usr\lib\mono\2.1\FSharp.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="monotouch">
-      <HintPath>..\..\..\..\Developer\MonoTouch\usr\lib\mono\2.1\monotouch.dll</HintPath>
     </Reference>
     <Reference Include="OpenTK">
       <HintPath>..\..\..\..\Developer\MonoTouch\usr\lib\mono\2.1\OpenTK.dll</HintPath>
@@ -78,8 +76,8 @@
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.fs" />
     <Compile Include="Properties\AssemblyInfo.fs" />
-    <Compile Include="MainActivity.fs" />
     <Compile Include="PissedOffOwls.fs" />
+    <Compile Include="MainActivity.fs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
